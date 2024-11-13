@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+
+# Archivos CSS y JavaScript compilados en la carpeta dist/
+dist/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno (por si usas variables de entorno en el futuro)
+.env
+
+# Archivos de logs (si en algún momento agregas un logger)
+*.log
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Otros archivos que pueden contener configuraciones locales
+*.env.*
