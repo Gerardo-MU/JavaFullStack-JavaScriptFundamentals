@@ -1,0 +1,27 @@
+//Colores
+$primary: #00394e; 
+$secondary: #515eb0; 
+$success: #92a0fb; 
+$light: #f9f5f0; 
+$dark: #140f07;
+
+$text-color: #333333;
+$backgroud-color: #f9f5f0;
+
+$btn-dark-color: $light;
+
+//Tipografía
+$font-family-base: 'Arial', sans-serif; 
+$font-family-heading: 'Georgia', serif;
+
+//Tamaños de fuente
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-base: 1.2rem;
+
+//Breackpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

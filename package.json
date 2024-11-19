@@ -1,8 +1,7 @@
 {
-  
   "name": "javascriptfundamentals",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://forms.office.com/r/CN54WAA3QK",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,10 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3"
-  },
-  "devDependencies": {
-    "sass": "^1.80.7"
+    "bootstrap": "^5.3.3",
+    "sass": "^1.81.0"
   }
-  
 }
