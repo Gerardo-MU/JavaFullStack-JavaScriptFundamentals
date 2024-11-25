@@ -9,89 +9,80 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-light">
+    <!--Encabezado-->
     <header class="bg-primary text-white text-center py-3">
         <h1>Conversor de Divisas</h1>
         <p>Convierta fácilmente entre diferentes monedas</p>
     </header>
 
-    <main class="container my-5">
-        <div class="row justify-content-center my-3">
-        <div class="col-lg-6 col-md-8 col-sm-12">
+    <!--Contenedor principal-->
+    <main class="container mt-4 py-5 px-0">
+        <!--Card que reunie los datos para la conversión-->
+        <div class="row justify-content-center">
+        <div class="col-lg-9">
             <div class="card shadow">
-            <div class="card-body">
+            <div class="card-body p-4">
                 <h2 class="card-title text-center mb-4">Ingrese el monto</h2>
                 <!-- Formulario -->
-                <form id="currency-form">
+                <form id="row currency-form">
                 <div class="mb-3">
                     <label for="amount" class="form-label">Cantidad</label>
                     <input type="number" id="amount" class="form-control" placeholder="Ingrese el monto" required>
                 </div>
                 <div class="row mb-3">
+                    <!-- Campo para convertir "De" -->
                     <div class="col">
-                    <label for="from-currency" class="form-label">De</label>
-                    <select id="from-currency" class="form-select" required>
-                        <option value="" disabled selected>Seleccione una moneda</option>
-                        <option value="USD">Dólar Estadounidense (USD)</option>
-                        <option value="EUR">Euro (EUR)</option>
-                        <option value="JPY">Yen Japonés (JPY)</option>
-                    </select>
+                    <label for="fromCurrency" class="form-label">De</label>
+                    <select id="fromCurrency" class="form-select" required></select>
                     </div>
+                     <!-- Campo para convertir "A" -->
                     <div class="col">
-                    <label for="to-currency" class="form-label">A</label>
-                    <select id="to-currency" class="form-select" required>
-                        <option value="" disabled selected>Seleccione una moneda</option>
-                        <option value="USD">Dólar Estadounidense (USD)</option>
-                        <option value="EUR">Euro (EUR)</option>
-                        <option value="JPY">Yen Japonés (JPY)</option>
-                    </select>
+                    <label for="toCurrency" class="form-label">A</label>
+                    <select id="toCurrency" class="form-select" required></select>
                     </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary w-100">Convertir</button>
                 </div>
                 </form>
+                <div class="text-center">
+                    <button id="convertBtn" type="submit" class="btn btn-primary w-50">Convertir</button>
+                </div>
             </div>
             </div>
         </div>
         </div>
-        
-        <div class="row justify-content-center my-3">
-        <div class="col-lg-6 col-md-8 col-sm-12">
+
+        <!--Tarjeta para imprimir el resultado-->        
+        <div id="resultCard" class="row justify-content-center my-3">
+        <div class="col-lg-6">
             <div class="card shadow">
             <div class="card-body">
-                <div class="card-body d-flex justify-content-between align-items-center">
-                    <!-- Cuenta regresiva -->
-                    <div id="countdown" class="text-primary fs-5">
-                      Actualización en: <span id="time-left">30</span> segundos
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <!-- Resultado de la conversión -->
+                    <div class="text-end mx-3">
+                        <p id = "fromCurrencyText" class="mb-1"></p>
+                        <h4 id="result" class="text-success"></h4>
                     </div>
                     <!-- Precio del par -->
-                    <div id="price-info" class="text-end">
-                      <p class="mb-0">Precio actual</p>
-                      <h4 id="pair-price" class="text-success">$1.00</h4>
-                      <p class="small text-muted" id="pair-name">USD/EUR</p>
+                    <div class="text-end mx-3">
+                        <p id = "pairText" class="mb-1"></p>
+                        <h4 id="pairPrice" class="text-success"></h4>
                     </div>
                   </div>
             </div>
             </div>
         </div>
         </div>
-        <!-- Resultado -->
-        <div class="row justify-content-center mt-4">
-        <div class="col-lg-6 col-md-8 col-sm-12">
-            <div id="result" class="alert alert-info text-center d-none" role="alert">
-            El resultado será mostrado aquí.
-            </div>
-        </div>
-        </div>
     </main>
-
+    
+    <!--Pie de página-->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Conversor de Monedas. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Custom JS -->
-    <script src="dist/js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
