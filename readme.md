@@ -30,4 +30,4 @@ El funcionamiento del convertidor de monedas consiste en que el usuario seleccio
 ## Vista previa
 A continuación se presenta la página de inicio del sitio desarrollado, puede consultar la página al hacer clic [aquí](https://gmu-javascriptfundamentals-proyect.netlify.app)
 
-![Página de inicio](https://raw.githubusercontent.com/Gerardo-MU/JavaFullStack-JavaScriptFundamentals/refs/heads/Master/screenshots/sc1.png)
+![Página de inicio](https://raw.githubusercontent.com/Gerardo-MU/JavaFullStack-JavaScriptFundamentals/refs/heads/master/screenshots/sc1.png)
