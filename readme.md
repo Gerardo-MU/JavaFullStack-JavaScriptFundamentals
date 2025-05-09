@@ -1,20 +1,25 @@
-# BEDU Java: JavaScript Fundamentals
-## _Repositorio de trabajo_
+# Proyecto: ***Conversor de Monedas***
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=Master)](https://travis-ci.org/joemccann/dillinger)
+**Diplomado en Programación Java:** JavaScript
 
-## Objetivo del Proyecto:
+**Insignia electrónica:** clic [aquí](https://www.acreditta.com/credential/09f099c3-ad68-4af8-bbca-8348f3a40db4) 
 
+---
+
+## Objetivo
 Desarrollar una aplicación web que permita a los usuarios convertir el valor de una moneda a otra en tiempo real, utilizando tasas de cambio actualizadas. 
 Esta herramienta es útil para conocer el equivalente de una moneda en otra, como en situaciones de viajes, negocios, o compras internacionales.
 
-## Resumen de la Funcionalidad de la Aplicación:
+## Tecnologías utilizadas
+- **HTML5**
+- **CSS Modules + Sass**
+- **BOOTSTRAP** y **Flexbox** para sitio responsivo
+- **JavaScript** 
+- **Programación orientada a objetos** para modelar clases y funciones
 
-La aplicación presentará un formulario donde el usuario podrá seleccionar la moneda de origen y la moneda de destino, ingresar el valor a convertir, y visualizar el resultado de la conversión. Se utilizará una API para obtener las tasas de cambio actualizadas para hacer la conversión precisa.
+## Descripción
 
-## Características
-
-Durante este módulo, se implementaron distintas técnicas que permitieron aplicar los conocimeintos obtenidos en cada una de las sesiones, tales como: 
+El funcionamiento del convertidor de monedas consiste en que el usuario seleccione un par de divisas e ingrese la cantidad a convertir. Implementa PPO para implemntar clases que permitan realizar operaciones de cambio, así como para usar una API que permita traer información de los mercados de divisas. Además utiliza excepciones para operaciones erroneas y errores de comuncación. Los conceptos implemtados son: 
 
 - Variables y tipos de datos: Para almacenar valores como la cantidad a convertir, la tasa de cambio, y las monedas seleccionadas.
 - Estructura de datos: Objetos para almacenar los datos de las tasas de cambio si se requiere manipular múltiples monedas. 
@@ -22,8 +27,7 @@ Durante este módulo, se implementaron distintas técnicas que permitieron aplic
 - API: Conexión a una API de tasas de cambio, como "exchangeratesapi.io" o "openexchangerates.org", para obtener tasas de cambio actualizadas.
 - Programación asíncrona: Para manejar las llamadas a la API y asegurar que la interfaz espere los datos antes de realizar la conversión.
 
-## Proyecto
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=Proyecto)](https://travis-ci.org/joemccann/dillinger)
+## Vista previa
+A continuación se presenta la página de inicio del sitio desarrollado, puede consultar la página al hacer clic [aquí](https://gmu-javascriptfundamentals-proyect.netlify.app)
 
-Puedes consultar el link de la página de este proyecto: [Healty Life Forum](https://gmu-javascriptfundamentals-proyect.netlify.app)
-
+![Página de inicio](https://raw.githubusercontent.com/Gerardo-MU/JavaFullStack-JavaScriptFundamentals/refs/heads/Master/screenshots/sc1.png)
